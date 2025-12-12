@@ -7,7 +7,7 @@ index 7f95560..6e8094c 100644
      ::abort(); // dump core
    }
 -  os::_exit(1);
-+  os::signal_raise(SIGKILL);
++  ::raise(SIGKILL);
  }
  
  // Die immediately, no exit hook, no abort hook, no cleanup.
