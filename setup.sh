@@ -51,7 +51,7 @@ wget \
     http://http.us.debian.org/debian/pool/main/c/cups/libcups2-dev_2.4.2-3+deb12u9_arm64.deb \
     http://http.us.debian.org/debian/pool/main/z/zlib/zlib1g_1.2.13.dfsg-1_arm64.deb \
     http://http.us.debian.org/debian/pool/main/f/freetype/libfreetype6_2.12.1+dfsg-5+deb12u4_arm64.deb \
-    http://http.us.debian.org/debian/pool/main/f/freetype/libfreetype6-dev_2.12.1+dfsg-5+deb12u4_arm64.deb \
+    http://http.us.debian.org/debian/pool/main/f/freetype/libfreetype-dev_2.12.1+dfsg-5+deb12u4_arm64.deb \
     http://http.us.debian.org/debian/pool/main/f/fontconfig/libfontconfig1_2.14.1-4_arm64.deb \
     http://http.us.debian.org/debian/pool/main/f/fontconfig/libfontconfig-dev_2.14.1-4_arm64.deb \
 
