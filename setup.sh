@@ -49,6 +49,7 @@ wget \
     http://http.us.debian.org/debian/pool/main/a/alsa-lib/libasound2-dev_1.2.8-1+b1_arm64.deb \
     http://http.us.debian.org/debian/pool/main/c/cups/libcups2_2.4.2-3+deb12u9_arm64.deb \
     http://http.us.debian.org/debian/pool/main/c/cups/libcups2-dev_2.4.2-3+deb12u9_arm64.deb \
+    http://http.us.debian.org/debian/pool/main/c/cups/libcupsimage2-dev_2.4.2-3+deb12u9_arm64.deb \
     http://http.us.debian.org/debian/pool/main/z/zlib/zlib1g_1.2.13.dfsg-1_arm64.deb \
     http://http.us.debian.org/debian/pool/main/f/freetype/libfreetype6_2.12.1+dfsg-5+deb12u4_arm64.deb \
     http://http.us.debian.org/debian/pool/main/f/freetype/libfreetype-dev_2.12.1+dfsg-5+deb12u4_arm64.deb \
