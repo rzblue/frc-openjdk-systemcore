@@ -12,10 +12,10 @@ jobs:
         run: ./build-docker.sh
       - uses: actions/upload-artifact@v4
         with:
-          name: JRE
+          name: JDK
           path: |
             *.ipk
-            jre_*.tar.gz
+            jdk_*.tar.gz
 
   release-github:
     needs: build
@@ -26,7 +26,7 @@ jobs:
         uses: actions/download-artifact@v4
       - name: Create GitHub Release
         if: github.repository_owner == 'wpilibsuite' && startsWith(github.ref, 'refs/tags/v')
-        run: gh release create "${GITHUB_REF#refs/tags/}" JRE/*
+        run: gh release create "${GITHUB_REF#refs/tags/}" JDK/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

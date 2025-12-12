@@ -1,5 +1,5 @@
 # The git tag
-GIT_TAG=jdk-17.0.9+7
+GIT_TAG=jdk-21.0.9+10
 # The full version, e.g. "11u28-1"
 VER=`grep Version control | cut -c 10-`
 # The Java major version only, e.g. "11"
@@ -12,6 +12,5 @@ JAVA_PATCH=`grep Version control | cut -c 10- | cut -du -f 2 | cut -d- -f 1`
 YEAR=`grep Package control | cut -c 13-16`
 
 UBUNTU=22.04
-DOCKER_IMAGE=wpilib/roborio-cross-ubuntu:${YEAR}-${UBUNTU}
-IPK_NAME=frc${YEAR}-openjdk-17-jre_${VER}_cortexa9-vfpv3.ipk
-
+DOCKER_IMAGE=wpilib/systemcore-cross-ubuntu:${YEAR}-${UBUNTU}
+IPK_NAME=frc${YEAR}-openjdk-${JAVA_MAJOR}-jdk_${VER}_aarch64.ipk
