@@ -30,9 +30,9 @@ bash configure \
 	--with-version-opt=${YEAR}-${VER} \
 	--disable-warnings-as-errors
 make JOBS=`nproc` LOG=cmdlines all jdk-image
-pushd build/linux-arm-${JVM_VARIANT}-release/images
+pushd build/linux-aarch64-${JVM_VARIANT}-release/images
 tar czf jdk_${VER}.tar.gz jdk
-chown -R `id -u`:`id -g` jre_${VER}.tar.gz
+chown -R `id -u`:`id -g` jdk_${VER}.tar.gz
 cp -a jdk_${VER}.tar.gz /artifacts
 find jdk -name \*.diz -delete
 find jdk -name \*.so -type f | xargs arm-frc${YEAR}-linux-gnueabi-strip
