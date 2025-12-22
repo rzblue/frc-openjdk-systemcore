@@ -35,8 +35,8 @@ tar czf jdk_${VER}.tar.gz jdk
 chown -R `id -u`:`id -g` jdk_${VER}.tar.gz
 cp -a jdk_${VER}.tar.gz /artifacts
 find jdk -name \*.diz -delete
-find jdk -name \*.so -type f | xargs arm-frc${YEAR}-linux-gnueabi-strip
-arm-frc${YEAR}-linux-gnueabi-strip jdk/bin/* jdk/lib/jexec
+find jdk -name \*.so -type f | xargs aarch64-bookworm-linux-gnu-strip
+aarch64-bookworm-linux-gnu-strip jdk/bin/* jdk/lib/jexec
 tar czf jdk_${VER}-strip.tar.gz jdk
 chown -R `id -u`:`id -g` jdk_${VER}-strip.tar.gz
 cp -a jdk_${VER}-strip.tar.gz /artifacts
